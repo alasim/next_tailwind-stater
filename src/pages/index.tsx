@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="container sb flex items-center p-4 mx-auto min-h-screen justify-center">
@@ -18,6 +20,7 @@ export default function Home() {
           <span className="text-gray-700">TypeScript</span>
         </p>
         <button>Make a Donation</button>
+        <Link href="#">Click me</Link>
       </main>
     </div>
   );
