@@ -1,6 +1,71 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  color: #07031f;
+}
 
-/* Your own custom component styles */
-
-@import 'tailwindcss/utilities';
+h1 {
+  @apply text-[4rem] lg:text-[8rem] font-lora leading-tight;
+}
+h2 {
+  @apply text-[3rem] lg:text-[6rem] font-lora font-bold leading-tight;
+}
+h3 {
+  @apply text-[2.4rem] lg:text-[3.6rem] font-lora font-medium leading-tight;
+}
+h4 {
+  @apply text-[2rem] lg:text-[3rem] font-lora font-medium leading-tight;
+}
+p {
+  @apply text-[1.6rem] lg:text-[2.4rem] text-black/80 font-inter leading-[3.6rem];
+}
+.p_small {
+  @apply text-[1.6rem] lg:text-[1.8rem] font-inter leading-[3.0rem];
+}
+.link_text {
+  @apply text-[1.6rem] hover:text-primary transition duration-300 ease-in-out lg:text-[1.8rem] font-inter leading-tight;
+}
+button {
+  @apply text-[1.8rem] lg:text-[2.4rem] font-inter font-semibold leading-tight px-[5rem] py-[2.4rem] text-white active:scale-95 transition-all transform bg-secondary rounded-[0.8rem];
+}
+.bg-style {
+  @apply bg-cover bg-no-repeat bg-center;
+}
+.sb {
+  @apply border border-red-500;
+}
+.container {
+  @apply mx-auto;
+  width: 90%;
+}
+@media (min-width: 360px) {
+  .container {
+    @apply mx-auto;
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    @apply mx-auto max-w-[70rem];
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    @apply mx-auto max-w-[90rem];
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    @apply mx-auto max-w-[104rem];
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    @apply mx-auto max-w-[124rem];
+  }
+}
+@import "tailwindcss/utilities";
